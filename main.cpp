@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+
 using namespace std;
 
 int main() {
@@ -20,8 +21,13 @@ int main() {
     cout << "Enter first number: ";
     cin >> a;
 
-    cout << "Enter operator (+, -, *, /, ^): ";
+    cout << "Enter operator (+, -, *, /, ^, e): ";
     cin >> op;
+
+    if (op == 'e') {
+        cout << "Result: " << exp(a);
+        return 0;
+    }
 
     cout << "Enter second number: ";
     cin >> b;
