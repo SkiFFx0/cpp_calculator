@@ -4,6 +4,15 @@ using namespace std;
 
 int main() {
     cout << "Welcome to the calculator.\n";
+    cout << "Do you want to perform any operation? (Yes - No): ";
+
+    string choice;
+    cin >> choice;
+
+    if (choice != "Yes" && choice != "yes") {
+        cout << "Exiting.\n";
+        return 0;
+    }
 
     double a, b;
     char op;
