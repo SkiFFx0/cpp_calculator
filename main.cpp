@@ -18,15 +18,25 @@ int main() {
 
     double result;
 
-    if (op == '+') result = a + b;
-    else if (op == '-') result = a - b;
-    else if (op == '*') result = a * b;
-    else if (op == '/') result = a / b;
-    else {
-        cout << "Invalid operator";
-        return 1;
+    switch (op) {
+        case '+':
+            result = a + b;
+            break;
+        case '-':
+            result = a - b;
+            break;
+        case '*':
+            result = a * b;
+            break;
+        case '/':
+            result = a / b;
+            break;
+        default:
+            cout << "Invalid operator";
+            return 1;
     }
 
     cout << "Result: " << result;
+
     return 0;
 }
