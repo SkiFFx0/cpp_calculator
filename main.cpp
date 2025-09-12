@@ -29,6 +29,10 @@ int main() {
             result = a * b;
             break;
         case '/':
+            if (b == 0) {
+                cout << "Error: division by zero";
+                return 1;
+            }
             result = a / b;
             break;
         default:
@@ -37,6 +41,5 @@ int main() {
     }
 
     cout << "Result: " << result;
-
     return 0;
 }
