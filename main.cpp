@@ -25,7 +25,7 @@ int main() {
     cin >> op;
 
     if (op == 'e') {
-        cout << "Result: " << exp(a);
+        cout << "Result: " << exp(a) << "\n";
         return 0;
     }
 
@@ -46,7 +46,7 @@ int main() {
             break;
         case '/':
             if (b == 0) {
-                cout << "Error: division by zero";
+                cout << "Error: division by zero" << "\n";
                 return 1;
             }
             result = a / b;
@@ -55,10 +55,10 @@ int main() {
             result = pow(a, b);
             break;
         default:
-            cout << "Invalid operator";
+            cout << "Invalid operator" << "\n";
             return 1;
     }
 
-    cout << "Result: " << result;
+    cout << "Result: " << result << "\n";
     return 0;
 }
